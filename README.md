@@ -34,13 +34,13 @@ waits and retries every second until it appears.
 ## Building
 
 ```
-make
+gmake
 ```
 
 To cross-compile, e.g. for an aarch64 musl handheld from an x86_64 host:
 
 ```
-make CC="clang -target aarch64-linux-musl"
+gmake CC="clang -target aarch64-chimera-linux-musl"
 ```
 
 `CFLAGS` defaults to `-Os -Wall -Wextra` and `LDFLAGS` to `-s` (stripped
@@ -49,7 +49,7 @@ binary).
 ## Installing
 
 ```
-make install DESTDIR=/path/to/staging PREFIX=/usr
+gmake install PREFIX=/usr
 ```
 
 This installs:
@@ -95,8 +95,8 @@ may need to be adjusted for your specific device:
 
 ## Tested on
 
-- Anbernic R36S (Chimera Linux)
-- Anbernic RG353V (in progress)
+- R36S (Chimera Linux)
+- RG353V (in progress)
 
 ## License
 
