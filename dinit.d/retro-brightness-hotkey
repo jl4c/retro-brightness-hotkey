@@ -1,0 +1,4 @@
+type = process
+command = /usr/bin/retro-brightness-hotkey /dev/input/event2
+restart = true
+smooth-recovery = true
